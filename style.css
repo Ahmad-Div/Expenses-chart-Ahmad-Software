@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Bitter&family=DM+Sans:wght@400;700&family=Fira+Sans:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inconsolata:wght@600&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Lobster&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&family=Rubik:wght@400;500;700&display=swap');
+
+/* general style */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+}
+
+main {
+    padding: 4%;
+    width: 100%;
+}
+
+/* main section style */
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* main section style */
+
+
+/* card style */
+
+.card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 26rem;
+    padding: 2%
+}
+
+
+/* card style */
+
+
+
+
+/* up card style */
+
+.up-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 6%;
+    background-color: hsl(10, 79%, 65%);
+    padding: 4%;
+    border-radius: 10px;
+    color: white;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.up-card:hover {
+    transform: scale(1.1);
+}
+
+.up-card-heading {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.up-card-heading h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    animation-name: h1-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes h1-animation {
+    from {
+        color: white
+    }
+
+    to {
+        color: aqua
+    }
+}
+
+.up-card-heading p {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+}
+
+.up-card-logo-div img {
+    width: 3rem;
+    margin: 20% 0;
+}
+
+
+
+/* up card style */
+
+
+
+/* bottom card sytle */
+
+
+.down-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.down-card-header {
+    width: 100%;
+}
+
+.down-card-header h1 {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.chars {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.char {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transform: rotate(180deg);
+    position: relative;
+    margin: 3rem 0;
+}
+
+.char-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 2rem;
+    border-radius: 5px;
+}
+
+.char-amount-above {
+    position: absolute;
+    top: 95%;
+    width: fit-content;
+    padding: 18%;
+    background-color: rgb(51, 47, 47);
+    color: white;
+    transform: rotate(180deg);
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: none;
+
+}
+
+
+
+
+.days {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 100%;
+    transform: rotate(180deg);
+    color: hsl(28, 10%, 53%);
+}
+
+
+
+hr {
+    background-color: black;
+    height: 0.1rem;
+    width: 80%;
+}
+
+/* bottom card section */
+
+
+.down-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+.total-money-div h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.total-money-div p {
+    color: hsl(28, 10%, 53%);
+    margin-bottom: 0;
+}
+
+.monthly {
+    margin-top: 2%;
+    text-align: right;
+}
+
+.monthly h2 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.monthly p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: hsl(28, 10%, 53%);
+}
+
+
+
+/* footer section style */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    position: relative;
+}
+
+.attribution a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    background-color: black;
+    transform-origin: bottom center;
+    transition: 0.25s ease;
+}
+
+.attribution a:hover::after {
+    transform: scaleX(1);
+}
+
+
+@media(max-width:450px) {
+
+    .card {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .main-section {
+        width: 80%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .char-bar {
+        width: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .down-card-header h1 {
+        font-size: 1.4rem;
+    }
+
+
+}
